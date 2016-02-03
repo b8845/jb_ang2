@@ -25,14 +25,14 @@ public class RestServiceController {
     @POST
     @Consumes(CONSUMEDMEDIATYPE)
     @Produces(PRODUCTEDMEDIATYPE)
-    public Response saveQuestionnaireTemplate() {
+    public Response saveTemplate() {
         return Response.ok().build();
     }
 
     @GET
     @Path("{templateId}")
     @Produces(PRODUCTEDMEDIATYPE)
-    public Response getQuestionnaireTemplate(@PathParam("templateId") final Long templateId ) {
+    public Response getTemplate(@PathParam("templateId") final Long templateId ) {
         return Response.ok().build();
     }
 }
